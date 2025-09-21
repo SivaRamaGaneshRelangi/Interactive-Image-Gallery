@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+    td {
+        text-align: center;       
+        vertical-align: middle;   
+    }
+    #imgmain {
+        display: block;
+        margin: 0 auto;           
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $(".img").mouseover(function(){
+        var selimg = $(this).attr("src");
+        $("#imgmain").attr("src", selimg);
+    });
+    $(".img").mouseout(function(){
+        $("#imgmain").attr("src", "mainimg.jpg");
+    });
+});
+</script>
+</head>
+<body>
+<table align="center" border="2" width="100%">
+<tr>
+<td><img src="imggal1.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal2.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal3.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal4.jpeg" height="125" width="100%" class="img"/></td>
+</tr>
+<tr>
+<td><img src="imggal5.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal6.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal7.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal8.jpeg" height="125" width="100%" class="img"/></td>
+</tr>
+<tr>
+<td colspan="4">
+    <img src="mainimg.jpg" height="500" width="100%" id="imgmain"/>
+</td>
+</tr>
+<tr>
+<td><img src="imggal1.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal2.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal3.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal4.jpeg" height="125" width="100%" class="img"/></td>
+</tr>
+<tr>
+<td><img src="imggal5.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal6.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal7.jpeg" height="125" width="100%" class="img"/></td>
+<td><img src="imggal8.jpeg" height="125" width="100%" class="img"/></td>
+</tr>
+</table>
+</body>
+</html>
